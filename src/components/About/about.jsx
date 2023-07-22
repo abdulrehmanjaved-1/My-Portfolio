@@ -21,29 +21,32 @@ function about() {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <small>2+ Years Working</small>
             </article>
 
             <article className="about__card">
               <FiUsers className="about__icon" />
-              <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <h5>Open Source Contributions</h5>
+              <small>200+ This Year</small>
             </article>
 
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <small>15+ Completed</small>
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit dolore
-            ullam praesentium dolor aspernatur? In quis quibusdam assumenda
-            earum voluptate soluta debitis, repudiandae quo eos voluptatum?
-            Culpa ex libero mollitia?
+            I have successfully executed numerous projects in MERN stack and
+            DevOps, showcasing proficiency in end-to-end application
+            development, seamless integration, and deployment automation. My
+            track record reflects a commitment to delivering efficient and
+            top-quality solutions.
           </p>
 
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
+          <a href="#contact" className="btn btn-primary">
+            Let's Talk
+          </a>
         </div>
       </div>
     </section>

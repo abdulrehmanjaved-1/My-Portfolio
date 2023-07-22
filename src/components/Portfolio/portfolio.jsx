@@ -1,11 +1,58 @@
 import React from "react";
 import "./portfolio.css";
-import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
-import IMG4 from '../../assets/portfolio4.jpg'
-import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
+import IMG1 from '../../assets/image1.png'
+import IMG2 from '../../assets/image2.png'
+import IMG3 from '../../assets/image3.jpg'
+import IMG4 from '../../assets/image4.jpg'
+import IMG5 from '../../assets/image5.jpg'
+import IMG6 from '../../assets/image6.jpg'
+
+const data=[
+  {
+    data: 1,
+    Image: IMG1,
+    title: 'Blogify-BloggingApp With complete Authentication & Autherization',
+    github: 'https://github.com/abdulrehmanjaved-1/Blogging-App',
+    demo: 'https://dribble.com'
+  },
+  {
+    data: 2,
+    Image: IMG2,
+    title: 'ToDo-You can List & Plan Your Day With It',
+    github: 'https://github.com/abdulrehmanjaved-1/Vanilla-JS-Project',
+    demo: 'https://dribble.com'
+  },
+  {
+    data: 3,
+    Image: IMG3,
+    title: 'ZipMaker-Compress your Files With Streaming & Clusters',
+    github: 'https://github.com/abdulrehmanjaved-1/PipeLines',
+    demo: 'https://dribble.com'
+  },
+  {
+    data: 4,
+    Image: IMG4,
+    title: 'News-App Watch & Read All Daily Articles On Any News Catagory',
+    github: 'https://github.com/abdulrehmanjaved-1/News-App',
+    demo: 'https://dribble.com'
+  },
+  {
+    data: 5,
+    Image: IMG5,
+    title: 'Ecommerce-In Progress',
+    github: 'https://github.com/abdulrehmanjaved-1/Redux',
+    demo: 'https://dribble.com'
+  },
+  {
+    data: 6,
+    Image: IMG6,
+    title: 'Check My All Projects',
+    github: 'https://github.com/abdulrehmanjaved-1',
+    demo: 'https://dribble.com'
+  }
+
+
+]
 
 function portfolio() {
   return (
@@ -14,17 +61,20 @@ function portfolio() {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        <article className="portfolio__item">
+        {
+          data.map(({id,Image,title,github,demo})=>{
+            return (
+              <article key={id} className="portfolio__item">
           <div className="portfolio__item-image">
-            <img src={IMG1} alt="" />
+            <img src={Image} alt={title} />
           </div>
-          <h3>This is a portfolio item title</h3>
+          <h3>{title}</h3>
           <div className="portfolio__item-sta">
-          <a href="https://github.com" className="btn" target="_blank">
+          <a href={github} className="btn" target="_blank">
             Github
           </a>
           <a
-            href="https://dribbble.com/Alien_pixels"
+            href={demo}
             className="btn btn-primary"
             target="_blank"
           >
@@ -32,96 +82,10 @@ function portfolio() {
           </a>
           </div>
         </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={IMG2} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-sta">
-          <a href="https://github.com" className="btn" target="_blank">
-            Github
-          </a>
-          <a
-            href="https://dribbble.com/Alien_pixels"
-            className="btn btn-primary"
-            target="_blank"
-          >
-            Live Demo
-          </a>
-          </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={IMG3} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-sta">
-          <a href="https://github.com" className="btn" target="_blank">
-            Github
-          </a>
-          <a
-            href="https://dribbble.com/Alien_pixels"
-            className="btn btn-primary"
-            target="_blank"
-          >
-            Live Demo
-          </a>
-          </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={IMG4} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-sta">
-          <a href="https://github.com" className="btn" target="_blank">
-            Github
-          </a>
-          <a
-            href="https://dribbble.com/Alien_pixels"
-            className="btn btn-primary"
-            target="_blank"
-          >
-            Live Demo
-          </a>
-          </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={IMG5} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-sta">
-          <a href="https://github.com" className="btn" target="_blank">
-            Github
-          </a>
-          <a
-            href="https://dribbble.com/Alien_pixels"
-            className="btn btn-primary"
-            target="_blank"
-          >
-            Live Demo
-          </a>
-          </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={IMG6} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-sta">
-          <a href="https://github.com" className="btn" target="_blank">
-            Github
-          </a>
-          <a
-            href="https://dribbble.com/Alien_pixels"
-            className="btn btn-primary"
-            target="_blank"
-          >
-            Live Demo
-          </a>
-          </div>
-        </article>
+            )
+          })
+        }
+        
       </div>
     </section>
   );
