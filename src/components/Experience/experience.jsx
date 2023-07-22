@@ -1,6 +1,16 @@
 import React from "react";
 import "./experience.css";
-import { BsPatchCheckFill } from "react-icons/bs";
+import { AiFillHtml5 } from "react-icons/ai";
+import { IoLogoCss3 } from "react-icons/io";
+import { TbBrandJavascript } from "react-icons/tb";
+import { RiBootstrapFill } from "react-icons/ri";
+import { RiReactjsLine } from "react-icons/ri";
+import { IoLogoNodejs } from "react-icons/io";
+import { SiExpress } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+import { TbBrandMysql } from "react-icons/tb";
+import { GrDocker } from "react-icons/gr";
+
 function experience() {
   return (
     <section id="experience">
@@ -12,28 +22,28 @@ function experience() {
           <h3>Frontend Development</h3>
           <div className="experience__content">
             <article className="experience__details">
-              <BsPatchCheckFill className=".experience__details-icon" />
+              <AiFillHtml5 className=".experience__details-icon" />
               <div>
               <h4>HTML</h4>
               <small className="text-light">Experienced</small></div>
             </article>
             <article className="experience__details">
-              <BsPatchCheckFill className=".experience__details-icon" />
+              <IoLogoCss3 className=".experience__details-icon" />
               <div><h4>CSS</h4>
               <small className="text-light">Intermediate</small></div>
             </article>
             <article className="experience__details">
-              <BsPatchCheckFill className=".experience__details-icon" />
+              <TbBrandJavascript className=".experience__details-icon" />
               <div><h4>JavaScript</h4>
               <small className="text-light">Experienced</small></div>
             </article>
             <article className="experience__details">
-              <BsPatchCheckFill className=".experience__details-icon" />
+              <RiBootstrapFill className=".experience__details-icon" />
               <div><h4>Boostrap</h4>
               <small className="text-light">Intermediate</small></div>
             </article>
             <article className="experience__details">
-              <BsPatchCheckFill className=".experience__details-icon" />
+              <RiReactjsLine className=".experience__details-icon" />
               <div><h4>React</h4>
               <small className="text-light">Experienced</small></div>
             </article>
@@ -43,27 +53,27 @@ function experience() {
           <h3>Backend Development</h3>
           <div className="experience__content">
             <article className="experience__details">
-              <BsPatchCheckFill className=".experience__details-icon" />
+              <IoLogoNodejs className=".experience__details-icon" />
               <div><h4>Nodejs</h4>
               <small className="text-light">Experienced</small></div>
             </article>
             <article className="experience__details">
-              <BsPatchCheckFill className=".experience__details-icon" />
+              <SiExpress className=".experience__details-icon" />
               <div><h4>Express</h4>
               <small className="text-light">Experienced</small></div>
             </article>
             <article className="experience__details">
-              <BsPatchCheckFill className=".experience__details-icon" />
+              <SiMongodb className=".experience__details-icon" />
               <div><h4>Mongodb</h4>
               <small className="text-light">Intermediate</small></div>
             </article>
             <article className="experience__details">
-              <BsPatchCheckFill className=".experience__details-icon" />
+              <TbBrandMysql className=".experience__details-icon" />
               <div><h4>MySQL</h4>
               <small className="text-light">Intermediate</small></div>
             </article>
             <article className="experience__details">
-              <BsPatchCheckFill className=".experience__details-icon" />
+              <GrDocker className=".experience__details-icon" />
               <div><h4>Docker</h4>
               <small className="text-light">Experienced</small></div>
             </article>

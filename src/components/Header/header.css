@@ -37,9 +37,12 @@ header {
 
 /*========= ME =========*/
 .me{
-    background: linear-gradient(var(--color-primary),transparent);
+    background-image: url(../../assets/try7.jpg);
+    background-size: contain;
+
     width: 22rem;
     height: 30rem;
+    background-repeat: no-repeat;
     position: absolute;
     left: calc(50% - 11rem);
     margin-top: 4rem;
@@ -48,6 +51,12 @@ header {
     padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
+.testimage{
+    width: 100%;
+    border-radius: 12rem 12rem 0 0;
+
+    /* border-radius: 3rem; */
+}
 /*========= SCROLL DOWN =========*/
 .scroll_down {
     position: absolute;
@@ -63,6 +72,7 @@ header {
     header{
         height: 68vh;
     }
+    
 }
 
 /*========= MEDIA QUERIES (SMALL DEVICES =========*/
